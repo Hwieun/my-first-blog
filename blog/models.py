@@ -13,7 +13,7 @@ class Post(models.Model): #Post 모델 정의 #models Post가 장고 모델임�
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
-    def publich(self): #self가 this 포인터
+    def publish(self): #self가 this 포인터
         self.published_date = timezone.now()
         self.save()
 
